@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C210B5901A6E1FB70055C160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C210B58F1A6E1FB70055C160 /* AppDelegate.m */; };
+		C210B5921A6E1FB70055C160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C210B5911A6E1FB70055C160 /* main.m */; };
+		C210B5951A6E1FB70055C160 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C210B5941A6E1FB70055C160 /* ViewController.m */; };
+		C210B5971A6E1FB70055C160 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C210B5961A6E1FB70055C160 /* Images.xcassets */; };
+		C210B59A1A6E1FB70055C160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C210B5981A6E1FB70055C160 /* Main.storyboard */; };
+		C210B5A61A6E1FB70055C160 /* SMLoginItemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C210B5A51A6E1FB70055C160 /* SMLoginItemsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C210B5A01A6E1FB70055C160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C210B5811A6E1FB70055C160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C210B5881A6E1FB70055C160;
+			remoteInfo = SMLoginItems;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C210B5891A6E1FB70055C160 /* SMLoginItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMLoginItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C210B58D1A6E1FB70055C160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C210B58E1A6E1FB70055C160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C210B58F1A6E1FB70055C160 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C210B5911A6E1FB70055C160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C210B5931A6E1FB70055C160 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C210B5941A6E1FB70055C160 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C210B5961A6E1FB70055C160 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C210B5991A6E1FB70055C160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C210B59F1A6E1FB70055C160 /* SMLoginItemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMLoginItemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C210B5A41A6E1FB70055C160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C210B5A51A6E1FB70055C160 /* SMLoginItemsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMLoginItemsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C210B5861A6E1FB70055C160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C210B59C1A6E1FB70055C160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C210B5801A6E1FB70055C160 = {
+			isa = PBXGroup;
+			children = (
+				C210B58B1A6E1FB70055C160 /* SMLoginItems */,
+				C210B5A21A6E1FB70055C160 /* SMLoginItemsTests */,
+				C210B58A1A6E1FB70055C160 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C210B58A1A6E1FB70055C160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C210B5891A6E1FB70055C160 /* SMLoginItems.app */,
+				C210B59F1A6E1FB70055C160 /* SMLoginItemsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C210B58B1A6E1FB70055C160 /* SMLoginItems */ = {
+			isa = PBXGroup;
+			children = (
+				C210B58E1A6E1FB70055C160 /* AppDelegate.h */,
+				C210B58F1A6E1FB70055C160 /* AppDelegate.m */,
+				C210B5931A6E1FB70055C160 /* ViewController.h */,
+				C210B5941A6E1FB70055C160 /* ViewController.m */,
+				C210B5961A6E1FB70055C160 /* Images.xcassets */,
+				C210B5981A6E1FB70055C160 /* Main.storyboard */,
+				C210B58C1A6E1FB70055C160 /* Supporting Files */,
+			);
+			path = SMLoginItems;
+			sourceTree = "<group>";
+		};
+		C210B58C1A6E1FB70055C160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C210B58D1A6E1FB70055C160 /* Info.plist */,
+				C210B5911A6E1FB70055C160 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C210B5A21A6E1FB70055C160 /* SMLoginItemsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C210B5A51A6E1FB70055C160 /* SMLoginItemsTests.m */,
+				C210B5A31A6E1FB70055C160 /* Supporting Files */,
+			);
+			path = SMLoginItemsTests;
+			sourceTree = "<group>";
+		};
+		C210B5A31A6E1FB70055C160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C210B5A41A6E1FB70055C160 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C210B5881A6E1FB70055C160 /* SMLoginItems */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C210B5A91A6E1FB70055C160 /* Build configuration list for PBXNativeTarget "SMLoginItems" */;
+			buildPhases = (
+				C210B5851A6E1FB70055C160 /* Sources */,
+				C210B5861A6E1FB70055C160 /* Frameworks */,
+				C210B5871A6E1FB70055C160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMLoginItems;
+			productName = SMLoginItems;
+			productReference = C210B5891A6E1FB70055C160 /* SMLoginItems.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C210B59E1A6E1FB70055C160 /* SMLoginItemsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C210B5AC1A6E1FB70055C160 /* Build configuration list for PBXNativeTarget "SMLoginItemsTests" */;
+			buildPhases = (
+				C210B59B1A6E1FB70055C160 /* Sources */,
+				C210B59C1A6E1FB70055C160 /* Frameworks */,
+				C210B59D1A6E1FB70055C160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C210B5A11A6E1FB70055C160 /* PBXTargetDependency */,
+			);
+			name = SMLoginItemsTests;
+			productName = SMLoginItemsTests;
+			productReference = C210B59F1A6E1FB70055C160 /* SMLoginItemsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C210B5811A6E1FB70055C160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Keith Smiley";
+				TargetAttributes = {
+					C210B5881A6E1FB70055C160 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C210B59E1A6E1FB70055C160 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C210B5881A6E1FB70055C160;
+					};
+				};
+			};
+			buildConfigurationList = C210B5841A6E1FB70055C160 /* Build configuration list for PBXProject "SMLoginItems" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C210B5801A6E1FB70055C160;
+			productRefGroup = C210B58A1A6E1FB70055C160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C210B5881A6E1FB70055C160 /* SMLoginItems */,
+				C210B59E1A6E1FB70055C160 /* SMLoginItemsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C210B5871A6E1FB70055C160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C210B5971A6E1FB70055C160 /* Images.xcassets in Resources */,
+				C210B59A1A6E1FB70055C160 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C210B59D1A6E1FB70055C160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C210B5851A6E1FB70055C160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C210B5951A6E1FB70055C160 /* ViewController.m in Sources */,
+				C210B5921A6E1FB70055C160 /* main.m in Sources */,
+				C210B5901A6E1FB70055C160 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C210B59B1A6E1FB70055C160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C210B5A61A6E1FB70055C160 /* SMLoginItemsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C210B5A11A6E1FB70055C160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C210B5881A6E1FB70055C160 /* SMLoginItems */;
+			targetProxy = C210B5A01A6E1FB70055C160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C210B5981A6E1FB70055C160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C210B5991A6E1FB70055C160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C210B5A71A6E1FB70055C160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C210B5A81A6E1FB70055C160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C210B5AA1A6E1FB70055C160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SMLoginItems/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C210B5AB1A6E1FB70055C160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SMLoginItems/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C210B5AD1A6E1FB70055C160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SMLoginItemsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMLoginItems.app/Contents/MacOS/SMLoginItems";
+			};
+			name = Debug;
+		};
+		C210B5AE1A6E1FB70055C160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SMLoginItemsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMLoginItems.app/Contents/MacOS/SMLoginItems";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C210B5841A6E1FB70055C160 /* Build configuration list for PBXProject "SMLoginItems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C210B5A71A6E1FB70055C160 /* Debug */,
+				C210B5A81A6E1FB70055C160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C210B5A91A6E1FB70055C160 /* Build configuration list for PBXNativeTarget "SMLoginItems" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C210B5AA1A6E1FB70055C160 /* Debug */,
+				C210B5AB1A6E1FB70055C160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C210B5AC1A6E1FB70055C160 /* Build configuration list for PBXNativeTarget "SMLoginItemsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C210B5AD1A6E1FB70055C160 /* Debug */,
+				C210B5AE1A6E1FB70055C160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C210B5811A6E1FB70055C160 /* Project object */;
+}
