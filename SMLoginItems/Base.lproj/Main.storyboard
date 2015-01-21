@@ -679,13 +679,13 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" id="6hz-gb-xug">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="134"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="438" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="435" minWidth="40" maxWidth="1000" id="ECp-yC-8q0">
+                                                <tableColumn editable="NO" width="435" minWidth="40" maxWidth="1000" id="ECp-yC-8q0">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -698,7 +698,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <connections>
-                                                        <binding destination="DtG-HF-JCn" name="value" keyPath="arrangedObjects.l" id="aFP-ta-nir"/>
+                                                        <binding destination="DtG-HF-JCn" name="value" keyPath="arrangedObjects.applicationName" id="MUO-Q7-2Z8"/>
                                                     </connections>
                                                 </tableColumn>
                                             </tableColumns>
@@ -751,6 +751,9 @@
                             <constraint firstItem="21i-In-eAj" firstAttribute="trailing" secondItem="JRU-Z0-7ut" secondAttribute="trailing" id="z0a-j4-cfR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6hz-gb-xug" id="kbO-uW-cfR"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController id="DtG-HF-JCn">

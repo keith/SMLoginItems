@@ -13,6 +13,7 @@
 		C210B5971A6E1FB70055C160 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C210B5961A6E1FB70055C160 /* Images.xcassets */; };
 		C210B59A1A6E1FB70055C160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C210B5981A6E1FB70055C160 /* Main.storyboard */; };
 		C210B5A61A6E1FB70055C160 /* SMLoginItemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C210B5A51A6E1FB70055C160 /* SMLoginItemsTests.m */; };
+		C25D34751A6F0CDE001D93CD /* LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C25D34741A6F0CDE001D93CD /* LoginItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		C210B59F1A6E1FB70055C160 /* SMLoginItemsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMLoginItemsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C210B5A41A6E1FB70055C160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C210B5A51A6E1FB70055C160 /* SMLoginItemsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMLoginItemsTests.m; sourceTree = "<group>"; };
+		C25D34731A6F0CDE001D93CD /* LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginItem.h; sourceTree = "<group>"; };
+		C25D34741A6F0CDE001D93CD /* LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				C210B58F1A6E1FB70055C160 /* AppDelegate.m */,
 				C210B5931A6E1FB70055C160 /* ViewController.h */,
 				C210B5941A6E1FB70055C160 /* ViewController.m */,
+				C25D34731A6F0CDE001D93CD /* LoginItem.h */,
+				C25D34741A6F0CDE001D93CD /* LoginItem.m */,
 				C210B5961A6E1FB70055C160 /* Images.xcassets */,
 				C210B5981A6E1FB70055C160 /* Main.storyboard */,
 				C210B58C1A6E1FB70055C160 /* Supporting Files */,
@@ -217,6 +222,7 @@
 			files = (
 				C210B5951A6E1FB70055C160 /* ViewController.m in Sources */,
 				C210B5921A6E1FB70055C160 /* main.m in Sources */,
+				C25D34751A6F0CDE001D93CD /* LoginItem.m in Sources */,
 				C210B5901A6E1FB70055C160 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +410,7 @@
 				C210B5AB1A6E1FB70055C160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C210B5AC1A6E1FB70055C160 /* Build configuration list for PBXNativeTarget "SMLoginItemsTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +419,7 @@
 				C210B5AE1A6E1FB70055C160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
