@@ -8,4 +8,6 @@
 
 + (instancetype)itemFromServiceManagementDictionary:(NSDictionary *)dictionary;
 
++ (BOOL)jobIsSandboxed:(NSDictionary *)job;
+
 @end

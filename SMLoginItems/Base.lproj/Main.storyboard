@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -651,7 +651,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Login Items" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -729,16 +729,6 @@
                                     <action selector="refresh:" target="XfG-lQ-9wD" id="GlG-7S-V4f"/>
                                 </connections>
                             </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="JRU-Z0-7ut">
-                                <rect key="frame" x="267" y="22" width="195" height="18"/>
-                                <buttonCell key="cell" type="check" title="Show non-sandboxed items" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="4Yc-Uk-SLb">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <binding destination="XfG-lQ-9wD" name="value" keyPath="self.showNonSandboxedItems" id="8Ob-SZ-gbE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="21i-In-eAj" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="9zo-Ki-kl9"/>
@@ -747,8 +737,6 @@
                             <constraint firstItem="2Rl-pS-JlJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="hh8-lp-TZe"/>
                             <constraint firstAttribute="bottom" secondItem="2Rl-pS-JlJ" secondAttribute="bottom" constant="20" id="miX-cn-2E0"/>
                             <constraint firstItem="21i-In-eAj" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="uJi-2m-p8M"/>
-                            <constraint firstItem="2Rl-pS-JlJ" firstAttribute="centerY" secondItem="JRU-Z0-7ut" secondAttribute="centerY" id="vjF-Zz-toD"/>
-                            <constraint firstItem="21i-In-eAj" firstAttribute="trailing" secondItem="JRU-Z0-7ut" secondAttribute="trailing" id="z0a-j4-cfR"/>
                         </constraints>
                     </view>
                     <connections>

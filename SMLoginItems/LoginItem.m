@@ -28,6 +28,7 @@
     NSString *label = dictionary[@"Label"];
     if (!bundle || !bundle.bundleIdentifier) {
         self.bundleIdentifier = label;
+        self.executablePath = nil;
     } else {
         self.bundleIdentifier = bundle.bundleIdentifier;
     }
@@ -43,6 +44,27 @@
     }
 
     return self.bundleIdentifier;
+}
+
++ (BOOL)jobIsSandboxed:(NSDictionary *)job
+{
+    if (!job[@"PID"]) {
+        return YES;
+    }
+
+    if (job[@"EnableTransactions"]) {
+        return YES;
+    }
+
+    if (!job[@"ProgramArguments"]) {
+        return YES;
+    }
+
+    if ([job[@"OnDemand"] isEqual:@0]) {
+        return YES;
+    }
+
+    return NO;
 }
 
 @end

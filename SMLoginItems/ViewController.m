@@ -4,7 +4,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic) BOOL showNonSandboxedItems;
 @property (nonatomic) NSArray *items;
 @property (weak) IBOutlet NSTableView *tableView;
 
@@ -27,24 +26,25 @@
 
 - (void)loadItems
 {
-    CFArrayRef CFJobs = SMCopyAllJobDictionaries(kSMDomainUserLaunchd);
-    NSArray *jobs = CFBridgingRelease(CFJobs);
-    NSMutableArray *jobNames = [NSMutableArray new];
-    if (jobs && [jobs count] > 0) {
-        for (NSDictionary *job in jobs) {
-            NSString *label = job[@"Label"];
-            if ([label hasPrefix:@"com.apple."]) {
-                continue;
-            }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    CFArrayRef jobDictionaries = SMCopyAllJobDictionaries(kSMDomainUserLaunchd);
+#pragma clang diagnostic pop
+    NSArray *jobs = CFBridgingRelease(jobDictionaries);
+    NSMutableArray *sandboxedItems = [NSMutableArray new];
+    for (NSDictionary *job in jobs) {
+        NSString *label = job[@"Label"];
+        if ([label hasPrefix:@"com.apple."]) {
+            continue;
+        }
 
+        if ([LoginItem jobIsSandboxed:job]) {
             LoginItem *item = [LoginItem itemFromServiceManagementDictionary:job];
-            [jobNames addObject:item];
-
-            NSLog(@"%@", job);
+            [sandboxedItems addObject:item];
         }
     }
 
-    self.items = [jobNames copy];
+    self.items = [sandboxedItems copy];
 }
 
 - (IBAction)refresh:(id)sender
@@ -55,12 +55,19 @@
 - (void)doubleClickedTableView:(NSTableView *)sender
 {
     LoginItem *item = self.items[sender.selectedRow];
+    NSURL *fileURL;
     if (item.executablePath) {
-        NSURL *fileURL = [NSURL fileURLWithPath:item.executablePath];
-        [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:@[fileURL]];
+        fileURL = [NSURL fileURLWithPath:item.executablePath];
+    } else if (item.bundleIdentifier) {
+        fileURL = [[NSWorkspace sharedWorkspace]
+                   URLForApplicationWithBundleIdentifier:item.bundleIdentifier];
+    } else {
+        return;
     }
 
-    NSLog(@"YEa!");
+    if (fileURL) {
+        [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:@[fileURL]];
+    }
 }
 
 @end
